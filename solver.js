@@ -11,7 +11,7 @@ module.exports = {
 
     solve: function(req,res, next) {
         var resp = parse(req.files);
-        res.status(200).send(resp);
+        res.status(200).json({result: resp});
     },
     
     
